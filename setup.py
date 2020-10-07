@@ -2,22 +2,22 @@
 # -*- coding: utf-8 -*-
 # Copyright (C) YOURNAME (2019)
 #
-# This file is part of the YOURPACKAGE python package.
+# This file is part of the posydon python package.
 #
-# YOURPACKAGE is free software: you can redistribute it and/or modify
+# posydon is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
 # (at your option) any later version.
 #
-# YOURPACKAGE is distributed in the hope that it will be useful,
+# posydon is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with YOURPACKAGE.  If not, see <http://www.gnu.org/licenses/>.
+# along with posydon.  If not, see <http://www.gnu.org/licenses/>.
 
-"""Setup the YOURPACKAGE package
+"""Setup the posydon package
 """
 
 from __future__ import print_function
@@ -111,13 +111,14 @@ packagenames = find_packages()
 # Executables go in a folder called bin
 scripts = glob.glob(os.path.join('bin', '*'))
 
-PACKAGENAME = 'YOURPACKAGE'
-DISTNAME = 'YOURPACKAGE' #'YOUR DISTRIBTUION NAME (I.E. PIP INSTALL DISTNAME)' Generally good to be same as packagename
-AUTHOR = 'YOURNAME'
-AUTHOR_EMAIL = 'YOUREMAIL'
+
+PACKAGENAME = 'posydon'
+DISTNAME = 'posydon' #'YOUR DISTRIBTUION NAME (I.E. PIP INSTALL DISTNAME)' Generally good to be same as packagename
+AUTHOR = 'POSYDON Collaboration'
+AUTHOR_EMAIL = 'scottcoughlin2014@u.northwestern.edu'
 LICENSE = 'GPLv3+'
-DESCRIPTION = 'MY DESCRIPTION'
-GITHUBURL = 'https://github.com/CIERA-Northwestern/template.git'
+DESCRIPTION = 'POSYDON Stellar Evolution Package'
+GITHUBURL = 'https://github.com/POSYDON-code/POSYDON'
 
 setup(name=DISTNAME,
       provides=[PACKAGENAME],
@@ -138,14 +139,14 @@ setup(name=DISTNAME,
       install_requires=install_requires,
       tests_require=tests_require,
       extras_require=extras_require,
-      python_requires='!=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4',
+      python_requires='>3.5',
       use_2to3=True,
       classifiers=[
           'Development Status :: 4 - Beta',
           'Programming Language :: Python',
-          'Programming Language :: Python :: 3.5',
           'Programming Language :: Python :: 3.6',
           'Programming Language :: Python :: 3.7',
+          'Programming Language :: Python :: 3.8',
           'Intended Audience :: Science/Research',
           'Intended Audience :: End Users/Desktop',
           'Intended Audience :: Science/Research',
